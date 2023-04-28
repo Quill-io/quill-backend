@@ -33,13 +33,18 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
-
+	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+	// auth
+	implementation("org.springframework.boot:spring-boot-starter-security")
+
+	// reactor
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 
+	// lombok
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 
