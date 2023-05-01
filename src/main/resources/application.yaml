@@ -1,2 +1,16 @@
 server:
   port: 10500
+
+spring:
+  r2dbc:
+    url: ${env.DB_URL}
+    username: ${env.DB_USER_NAME}
+    password: ${env.DB_PASSWORD}
+    pool:
+      max-size: 100
+      validation-query: SELECT 1
+
+logging:
+  level:
+    org.springframework.r2dbc.core: debug
+    org.springframework.web: debug
