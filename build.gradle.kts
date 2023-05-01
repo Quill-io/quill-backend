@@ -51,6 +51,8 @@ dependencies {
 	implementation("com.github.jasync-sql:jasync-r2dbc-mysql:2.1.1")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 
+	implementation ("me.paulschwarz:spring-dotenv:2.5.4")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 }

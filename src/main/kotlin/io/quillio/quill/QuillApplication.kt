@@ -7,8 +7,7 @@ import org.springframework.boot.runApplication
 import org.springframework.web.reactive.config.EnableWebFlux
 
 @EnableWebFlux
-/* db 구성 전까지 DataSourceAutoConfiguration, R2dbcAutoConfiguration 제외 */
-@SpringBootApplication(exclude = [DataSourceAutoConfiguration::class, R2dbcAutoConfiguration::class])
+@SpringBootApplication
 class QuillApplication
 
 fun main(args: Array<String>) {
