@@ -10,12 +10,4 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping(path = ["/user"])
 class UserController(private val userService: UserService) {
-    @GetMapping(path = ["/authority/{test}"])
-    fun getAuthority(@PathVariable test:String): String {
-        if (test.equals("1")) {
-            throw AppException(ExceptionCode.INTERNAL_CUSTOM_ERROR)
-        }
-
-        return test
-    }
 }
