@@ -12,5 +12,5 @@ spring:
 
 logging:
   level:
-    org.springframework.r2dbc.core: debug
-    org.springframework.web: debug
+    org.springframework.r2dbc.core: ${env.LOGGING_TYPE}
+    org.springframework.web: ${env.LOGGING_TYPE}
