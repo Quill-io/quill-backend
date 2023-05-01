@@ -9,6 +9,12 @@ spring:
     pool:
       max-size: 100
       validation-query: SELECT 1
+      initial-size: 5
+      max-idle-time: 10s
+      max-create-connection-time: 2s
+      max-acquire-time: 2s
+      max-life-time: 3s
+
 
 logging:
   level:
