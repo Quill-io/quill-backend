@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
+import io.quillio.quill.user.entity.UserEntity
+import kotlinx.coroutines.flow.Flow
 
 @RestController
 @RequestMapping(path = ["/user"])
