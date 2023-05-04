@@ -10,4 +10,10 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping(path = ["/user"])
 class UserController(private val userService: UserService) {
+
+    @GetMapping(path = ["/{id}"])
+    suspend fun test(@PathVariable id: Long): Flow<UserEntity> {
+        return userService.getUser(id)
+    }
+
 }
